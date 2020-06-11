@@ -156,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 1
   doortrigger: {fileID: 24631416}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &24631418
@@ -267,7 +267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 1
   doortrigger: {fileID: 38684380}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &38684382
@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 1
   doortrigger: {fileID: 111904456}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &111904458
@@ -1319,7 +1319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &189653552
 Transform:
   m_ObjectHideFlags: 0
@@ -1628,7 +1628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &208307354
 Transform:
   m_ObjectHideFlags: 0
@@ -1956,7 +1956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 0
   doortrigger: {fileID: 252576333}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &252576335
@@ -2048,7 +2048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &262718704
 Transform:
   m_ObjectHideFlags: 0
@@ -2100,7 +2100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 1
   doortrigger: {fileID: 304823783}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &304823785
@@ -2665,7 +2665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 1
   doortrigger: {fileID: 514763853}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &514763855
@@ -2757,7 +2757,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &527435144
 Transform:
   m_ObjectHideFlags: 0
@@ -3254,7 +3254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &605530388
 Transform:
   m_ObjectHideFlags: 0
@@ -3285,7 +3285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &611881795
 Transform:
   m_ObjectHideFlags: 0
@@ -3694,7 +3694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &775702278
 Transform:
   m_ObjectHideFlags: 0
@@ -4023,7 +4023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 0
   doortrigger: {fileID: 882003493}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &882003495
@@ -4322,6 +4322,7 @@ GameObject:
   - component: {fileID: 984393965}
   - component: {fileID: 984393964}
   - component: {fileID: 984393968}
+  - component: {fileID: 984393969}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4358,7 +4359,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 16
   m_CollisionDetection: 0
 --- !u!65 &984393965
 BoxCollider:
@@ -4432,6 +4433,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3b06a9f680e20d49a6960cd95321dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &984393969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984393962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed01af397dcc534d9be561882709fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &991660422
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,7 +4479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 0
   doortrigger: {fileID: 991660422}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &991660424
@@ -4558,7 +4571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &994289650
 Transform:
   m_ObjectHideFlags: 0
@@ -4866,7 +4879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1030327884
 Transform:
   m_ObjectHideFlags: 0
@@ -4916,7 +4929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 0
   doortrigger: {fileID: 1080619226}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &1080619228
@@ -5400,7 +5413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 0
   doortrigger: {fileID: 1243932885}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &1243932887
@@ -6471,7 +6484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 0
   doortrigger: {fileID: 1497463900}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &1497463902
@@ -6748,7 +6761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1552966453
 Transform:
   m_ObjectHideFlags: 0
@@ -6779,7 +6792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1607114775
 Transform:
   m_ObjectHideFlags: 0
@@ -7016,7 +7029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 0
   doortrigger: {fileID: 1654826547}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &1654826549
@@ -7293,7 +7306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1689132705
 Transform:
   m_ObjectHideFlags: 0
@@ -7666,7 +7679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 1
   doortrigger: {fileID: 1754922587}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &1754922589
@@ -7850,7 +7863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1810197577
 Transform:
   m_ObjectHideFlags: 0
@@ -8178,8 +8191,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 1
   doortrigger: {fileID: 1870406908}
-  player: {fileID: 0}
-  lights_1: {fileID: 0}
+  player: {fileID: 984393962}
+  lights_1: {fileID: 775702277}
   lights_2: {fileID: 0}
 --- !u!65 &1870406910
 BoxCollider:
@@ -8289,7 +8302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use_X: 1
   doortrigger: {fileID: 1877098865}
-  player: {fileID: 0}
+  player: {fileID: 984393962}
   lights_1: {fileID: 0}
   lights_2: {fileID: 0}
 --- !u!65 &1877098867

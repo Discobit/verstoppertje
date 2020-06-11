@@ -15,6 +15,8 @@ public class PlayerCharacter : MonoBehaviour
     private void Update()
     {
         HandleMovement();
+        //rotation
+        //transform.LookAt(Camera.main.ScreenToWorldPoint(Input.mousePosition));
     }
 
     private void HandleMovement()

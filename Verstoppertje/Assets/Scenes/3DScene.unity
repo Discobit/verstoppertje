@@ -154,11 +154,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 1
+  use_left_right: 1
   doortrigger: {fileID: 46026082}
   player: {fileID: 984393962}
-  lights_1: {fileID: 1810197576}
-  lights_2: {fileID: 208307353}
+  lights_left: {fileID: 1810197576}
+  lights_right: {fileID: 208307353}
+  lights_top: {fileID: 0}
+  lights_down: {fileID: 0}
 --- !u!65 &46026084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -929,11 +931,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 1
+  use_left_right: 1
   doortrigger: {fileID: 131304066}
   player: {fileID: 984393962}
-  lights_1: {fileID: 605530387}
-  lights_2: {fileID: 994289649}
+  lights_left: {fileID: 605530387}
+  lights_right: {fileID: 1607114774}
+  lights_top: {fileID: 0}
+  lights_down: {fileID: 0}
 --- !u!65 &131304068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1040,11 +1044,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 1
+  use_left_right: 1
   doortrigger: {fileID: 153820218}
   player: {fileID: 984393962}
-  lights_1: {fileID: 189653551}
-  lights_2: {fileID: 1810197576}
+  lights_left: {fileID: 208307353}
+  lights_right: {fileID: 189653551}
+  lights_top: {fileID: 0}
+  lights_down: {fileID: 0}
 --- !u!65 &153820220
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1319,7 +1325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &189653552
 Transform:
   m_ObjectHideFlags: 0
@@ -1460,11 +1466,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 1
+  use_left_right: 1
   doortrigger: {fileID: 194074497}
   player: {fileID: 984393962}
-  lights_1: {fileID: 527435143}
-  lights_2: {fileID: 1810197576}
+  lights_left: {fileID: 527435143}
+  lights_right: {fileID: 1810197576}
+  lights_top: {fileID: 0}
+  lights_down: {fileID: 0}
 --- !u!65 &194074499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1739,7 +1747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &208307354
 Transform:
   m_ObjectHideFlags: 0
@@ -1787,11 +1795,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 0
+  use_left_right: 0
   doortrigger: {fileID: 224966411}
   player: {fileID: 984393962}
-  lights_1: {fileID: 1607114774}
-  lights_2: {fileID: 189653551}
+  lights_left: {fileID: 0}
+  lights_right: {fileID: 0}
+  lights_top: {fileID: 189653551}
+  lights_down: {fileID: 1607114774}
 --- !u!65 &224966413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2159,7 +2169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &262718704
 Transform:
   m_ObjectHideFlags: 0
@@ -2177,6 +2187,100 @@ Transform:
   m_Father: {fileID: 1729982432}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &274996184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 274996185}
+  - component: {fileID: 274996188}
+  - component: {fileID: 274996187}
+  - component: {fileID: 274996186}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &274996185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274996184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 666554506}
+  m_Father: {fileID: 984393963}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &274996186
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274996184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &274996187
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274996184}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &274996188
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274996184}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &312885923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,7 +2750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &527435144
 Transform:
   m_ObjectHideFlags: 0
@@ -3143,7 +3247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &605530388
 Transform:
   m_ObjectHideFlags: 0
@@ -3174,7 +3278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &611881795
 Transform:
   m_ObjectHideFlags: 0
@@ -3230,11 +3334,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 0
+  use_left_right: 0
   doortrigger: {fileID: 637706719}
   player: {fileID: 984393962}
-  lights_1: {fileID: 527435143}
-  lights_2: {fileID: 611881794}
+  lights_left: {fileID: 0}
+  lights_right: {fileID: 0}
+  lights_top: {fileID: 611881794}
+  lights_down: {fileID: 527435143}
 --- !u!65 &637706721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3426,13 +3532,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666554505}
-  m_LocalRotation: {x: 0.7474665, y: -0.015719118, z: -0.017075997, w: 0.66389394}
-  m_LocalPosition: {x: 0.16, y: 9.14, z: 0.71}
+  m_LocalRotation: {x: 0.24790369, y: 0, z: 0, w: 0.9687847}
+  m_LocalPosition: {x: 0.109999776, y: -1.1399999, z: 0.710001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 984393963}
+  m_Father: {fileID: 274996185}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 97.27899, y: 21.480988, z: 21.370987}
+  m_LocalEulerAnglesHint: {x: 28.707, y: 0, z: 0}
 --- !u!108 &666554507
 Light:
   m_ObjectHideFlags: 0
@@ -3444,10 +3550,10 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10.868036
-  m_SpotAngle: 50.911102
+  m_Color: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 1}
+  m_Intensity: 20
+  m_Range: 2.6157262
+  m_SpotAngle: 71.9
   m_InnerSpotAngle: 9.870111
   m_CookieSize: 10
   m_Shadows:
@@ -3526,11 +3632,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 1
+  use_left_right: 1
   doortrigger: {fileID: 675507545}
   player: {fileID: 984393962}
-  lights_1: {fileID: 1607114774}
-  lights_2: {fileID: 994289649}
+  lights_left: {fileID: 994289649}
+  lights_right: {fileID: 1607114774}
+  lights_top: {fileID: 0}
+  lights_down: {fileID: 0}
 --- !u!65 &675507547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3822,11 +3930,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 0
+  use_left_right: 0
   doortrigger: {fileID: 767562259}
   player: {fileID: 984393962}
-  lights_1: {fileID: 1030327883}
-  lights_2: {fileID: 262718703}
+  lights_left: {fileID: 0}
+  lights_right: {fileID: 0}
+  lights_top: {fileID: 262718703}
+  lights_down: {fileID: 1030327883}
 --- !u!65 &767562261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3916,7 +4026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &775702278
 Transform:
   m_ObjectHideFlags: 0
@@ -3966,11 +4076,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 1
+  use_left_right: 1
   doortrigger: {fileID: 779609895}
   player: {fileID: 984393962}
-  lights_1: {fileID: 1607114774}
-  lights_2: {fileID: 1689132704}
+  lights_left: {fileID: 1689132704}
+  lights_right: {fileID: 1607114774}
+  lights_top: {fileID: 0}
+  lights_down: {fileID: 0}
 --- !u!65 &779609897
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4170,11 +4282,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 0
+  use_left_right: 0
   doortrigger: {fileID: 796779463}
   player: {fileID: 984393962}
-  lights_1: {fileID: 527435143}
-  lights_2: {fileID: 775702277}
+  lights_left: {fileID: 0}
+  lights_right: {fileID: 0}
+  lights_top: {fileID: 527435143}
+  lights_down: {fileID: 775702277}
 --- !u!65 &796779465
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4578,9 +4692,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  field of view: 15.483177
+  orthographic: 1
+  orthographic size: 5.696202
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4604,7 +4718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 10.32, z: -0.09}
+  m_LocalPosition: {x: 0, y: 43.4, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4655,6 +4769,7 @@ GameObject:
   - component: {fileID: 984393965}
   - component: {fileID: 984393964}
   - component: {fileID: 984393968}
+  - component: {fileID: 984393969}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4669,11 +4784,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984393962}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.461, y: 0.561, z: -4.182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.461, y: 0.561, z: -4.3}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
-  - {fileID: 666554506}
+  - {fileID: 274996185}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4765,6 +4880,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3b06a9f680e20d49a6960cd95321dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &984393969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984393962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf67db783bdbeb14ca4d4d511234b7c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 274996184}
+  cam: {fileID: 963194227}
+  offset: 0
 --- !u!1 &994289649
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,7 +4910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &994289650
 Transform:
   m_ObjectHideFlags: 0
@@ -5322,11 +5452,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 0
+  use_left_right: 0
   doortrigger: {fileID: 1117560161}
   player: {fileID: 984393962}
-  lights_1: {fileID: 262718703}
-  lights_2: {fileID: 1810197576}
+  lights_left: {fileID: 0}
+  lights_right: {fileID: 0}
+  lights_top: {fileID: 1810197576}
+  lights_down: {fileID: 262718703}
 --- !u!65 &1117560163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5433,11 +5565,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 0
+  use_left_right: 0
   doortrigger: {fileID: 1229653951}
   player: {fileID: 984393962}
-  lights_1: {fileID: 189653551}
-  lights_2: {fileID: 611881794}
+  lights_left: {fileID: 0}
+  lights_right: {fileID: 0}
+  lights_top: {fileID: 611881794}
+  lights_down: {fileID: 189653551}
 --- !u!65 &1229653953
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5731,11 +5865,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 0
+  use_left_right: 0
   doortrigger: {fileID: 1267545558}
   player: {fileID: 984393962}
-  lights_1: {fileID: 1552966452}
-  lights_2: {fileID: 262718703}
+  lights_left: {fileID: 0}
+  lights_right: {fileID: 0}
+  lights_top: {fileID: 262718703}
+  lights_down: {fileID: 1552966452}
 --- !u!65 &1267545560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6970,7 +7106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1552966453
 Transform:
   m_ObjectHideFlags: 0
@@ -7001,7 +7137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1607114775
 Transform:
   m_ObjectHideFlags: 0
@@ -7310,11 +7446,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 1
+  use_left_right: 1
   doortrigger: {fileID: 1654540565}
   player: {fileID: 984393962}
-  lights_1: {fileID: 1030327883}
-  lights_2: {fileID: 775702277}
+  lights_left: {fileID: 775702277}
+  lights_right: {fileID: 1030327883}
+  lights_top: {fileID: 0}
+  lights_down: {fileID: 0}
 --- !u!1 &1673930672
 GameObject:
   m_ObjectHideFlags: 0
@@ -7515,7 +7653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1689132705
 Transform:
   m_ObjectHideFlags: 0
@@ -7961,7 +8099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1810197577
 Transform:
   m_ObjectHideFlags: 0
@@ -8195,11 +8333,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519a402d7829b3d428284d34d7039f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  use_X: 1
+  use_left_right: 1
   doortrigger: {fileID: 1836833327}
   player: {fileID: 984393962}
-  lights_1: {fileID: 1689132704}
-  lights_2: {fileID: 1552966452}
+  lights_left: {fileID: 1552966452}
+  lights_right: {fileID: 1689132704}
+  lights_top: {fileID: 0}
+  lights_down: {fileID: 0}
 --- !u!65 &1836833329
 BoxCollider:
   m_ObjectHideFlags: 0

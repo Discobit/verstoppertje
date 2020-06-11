@@ -4,26 +4,29 @@ using UnityEngine;
 
 public class LightsTrigger : MonoBehaviour
 {
-    public bool use_X;
+    public bool use_left_right;
     public GameObject doortrigger;
     public GameObject player;
 
-    public GameObject lights_1;
-    public GameObject lights_2;
+    public GameObject lights_left;
+    public GameObject lights_right;
+
+    public GameObject lights_top;
+    public GameObject lights_down;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!use_X)
+        if (!use_left_right)
         {
             if(doortrigger.transform.position.z > player.transform.position.z)
             {
                 Debug.Log("Player below");
-                lights_1.SetActive(true);
+                lights_top.SetActive(true);
             }
             else
             {
                 Debug.Log("Player above");
-                lights_2.SetActive(true);
+                lights_down.SetActive(true);
             }
         }
         else 
@@ -31,12 +34,12 @@ public class LightsTrigger : MonoBehaviour
             if (doortrigger.transform.position.x > player.transform.position.x)
             {
                 Debug.Log("Player left");
-                lights_1.SetActive(true);
+                lights_right.SetActive(true);
             }
             else
             {
                 Debug.Log("Player right");
-                lights_2.SetActive(true);
+                lights_left.SetActive(true);
             }
         }
 

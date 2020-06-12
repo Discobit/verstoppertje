@@ -20,26 +20,26 @@ public class LightsTrigger : MonoBehaviour
         {
             if(doortrigger.transform.position.z > player.transform.position.z)
             {
-                Debug.Log("Player below");
                 lights_top.SetActive(true);
+                lights_top.GetComponent<LightTriggered>().UpdateRoom();
             }
             else
             {
-                Debug.Log("Player above");
                 lights_down.SetActive(true);
+                lights_down.GetComponent<LightTriggered>().UpdateRoom();
             }
         }
         else 
         {
             if (doortrigger.transform.position.x > player.transform.position.x)
             {
-                Debug.Log("Player left");
                 lights_right.SetActive(true);
+                lights_right.GetComponent<LightTriggered>().UpdateRoom();
             }
             else
             {
-                Debug.Log("Player right");
                 lights_left.SetActive(true);
+                lights_left.GetComponent<LightTriggered>().UpdateRoom();
             }
         }
 

@@ -18,14 +18,12 @@ public class LightMovement : MonoBehaviour
         if(Physics.Raycast(ray, out hit))
         {
             lookDir = hit.point - rb.transform.position;
-            Debug.DrawLine(rb.transform.position, hit.point);
         }
     }
 
     private void FixedUpdate()
     {
         float angle = Mathf.Atan2(lookDir.x, lookDir.z) * Mathf.Rad2Deg;
-        //Debug.Log(angle);
         rb.transform.eulerAngles = new Vector3(0, angle, 0);
     }
 }
